@@ -60,7 +60,11 @@ export async function createFeedback(params: CreateFeedbackParams) {
     await feedbackRef.set(feedback);
 
     return { success: true, feedbackId: feedbackRef.id };
-  } catch (error) {
+
+  }
+  
+  catch (error)
+  {
     console.error("Error saving feedback:", error);
     return { success: false };
   }

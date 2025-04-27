@@ -295,23 +295,37 @@
 }
 
 @utility dark-gradient {
-  @apply bg-gradient-to-b from-[#1A1C20] to-[#08090D];
+  @apply bg-gradient-to-b from-[#0F2027] to-[#203A43];
 }
+/* Deep blue/grey — already PERFECT, very professional and tech */
 
 @utility border-gradient {
-  @apply bg-gradient-to-b from-[#4B4D4F] to-[#4B4D4F33];
+  @apply bg-gradient-to-r from-[#e309bb] to-[#1a0ecd];
 }
+
+/* Brighter blue tones — keeping energy but making the border slightly more "solid" */
+
+/* A subtle energetic blue — makes the border pop without being loud */
+
+
+
+@utility blue-gradient-dark {
+  @apply bg-gradient-to-b from-[#09044e] to-[#3a0230];
+}
+
+
+@utility blue-gradient {
+  @apply bg-gradient-to-l from-[#11998e] to-[#38ef7d];
+}
+
+
+/* Soft blue-turquoise — matches robot’s cool tones + keeps card fresh */
+
+
+
 
 @utility pattern {
   @apply bg-[url('/pattern.png')] bg-top bg-no-repeat;
-}
-
-@utility blue-gradient-dark {
-  @apply bg-gradient-to-b from-[#171532] to-[#08090D];
-}
-
-@utility blue-gradient {
-  @apply bg-gradient-to-l from-[#FFFFFF] to-[#CAC5FE];
 }
 
 @utility flex-center {
