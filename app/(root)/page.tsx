@@ -1,14 +1,28 @@
 import Link from "next/link";
 import Image from "next/image";
+import { redirect } from "next/navigation";
 
 import { Button } from "@/components/ui/button";
 import InterviewCard from "@/components/InterviewCard";
+
+import { cookies } from "next/headers";
+import { auth, db } from "@/firebase/admin";
 
 import { getCurrentUser } from "@/lib/actions/auth.action";
 import {
   getInterviewsByUserId,
   getLatestInterviews,
 } from "@/lib/actions/general.action";
+
+// Server action to handle logout and redirect
+async function handleLogout() {
+  "use server";
+
+  const cookieStore = cookies();
+  cookieStore.delete("session");
+
+  redirect("/sign-in");
+}
 
 async function Home() {
   const user = await getCurrentUser();
@@ -23,7 +37,16 @@ async function Home() {
 
   return (
     <>
-      <section className="card-cta">
+      {/* Top Right Logout Button */}
+      <div className="w-full flex justify-end p-4">
+        <form action={handleLogout}>
+          <Button  background-color="red" type="submit" className="btn-secondary">
+            Logout
+          </Button>
+        </form>
+      </div>
+
+      <section className="card-cta justify-between items-start flex-wrap">
         <div className="flex flex-col gap-6 max-w-lg">
           <h2>Get Interview-Ready with AI-Powered Practice & Feedback</h2>
           <p className="text-lg">
