@@ -6,6 +6,13 @@
 🛠️ Crafted from scratch with **Next.js**, **Firebase**, **Vapi AI**, **Google Gemini**, styled using **TailwindCSS** and **shadcn/ui** — this platform combines the latest technologies into a real-world, interactive learning experience.
 
 
+![image](https://github.com/user-attachments/assets/4d9906ca-fd40-472e-ac71-efebf170d086)
+
+
+
+
+
+
 
 --
 
