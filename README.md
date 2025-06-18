@@ -41,3 +41,4 @@
 
 ---
 
+https://interviewprep-ai-kappa.vercel.app/api/vapi/generate
