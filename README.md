@@ -2,7 +2,7 @@
 
 # InterviewPrep AI
 
-🚀 I built my own platform, **InterviewPrep AI**, to transform how we prepare for job interviews using the power of AI voice agents, real-time feedback, and a modern, beautiful interface.  
+🚀 Build **InterviewPrep AI**, to transform how we prepare for job interviews using the power of AI voice agents, real-time feedback, and a modern, beautiful interface.  
 🛠️ Crafted from scratch with **Next.js**, **Firebase**, **Vapi AI**, **Google Gemini**, styled using **TailwindCSS** and **shadcn/ui** — this platform combines the latest technologies into a real-world, interactive learning experience.
 
 
